@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "Keri",
+    "slug": "Keri",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "dark",
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#081A32"
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    },
+    "plugins":[
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 23,
+            "usesCleartextTraffic": true,
+            "useLegacyPackaging":true
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Keri to access your gallery"
+        }
+      ],
+      [
+        "expo-camera",{
+          "cameraPermission": "Allow Keri to access your camera",
+          "microphonePermission": "Allow Keri to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets//fonts//impacted.ttf"]
+        }
+      ]
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#000000",
+        "versionCode": 2
+      },
+      "package": "com.keri.keri"
+    },
+    "web": {
+      "favicon": "./assets/logo.png"
+    }
+  }
+}
